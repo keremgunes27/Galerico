@@ -224,3 +224,20 @@ body {
 .x-large {
   grid-row-end: span 65;
 }
+@media only screen and (max-width: 992px) {
+  #content .content {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #content .content {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  #header .container {
+    flex-direction: column !important;
+  }
+  #header .container .logo {
+    margin-bottom: 15px;
+  }
+}
